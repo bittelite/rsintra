@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  main {
+    min-height: 50vh;
+  }
+  footer {
+    color: #ffffff;
+    margin: 0 auto;
+    @apply py-10;
+  }
+  footer p {
+    color: #ffffff;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply mb-4 max-w-xl;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-lg;
+  }
+  p {
+    @apply text-sm text-default-text mb-4 max-w-xl;
+  }
+  nav {
+    @apply h-20 sm:h-24;
+  }
+  nav a {
+    @apply font-bold hover:text-blue-accent-hover;
+  }
+  header {
+    @apply z-50;
+  }
+  form {
+  }
+  label {
+    @apply mt-4;
+  }
+  select,
+  textarea {
+    @apply appearance-none w-full bg-gray-50 border-b border-b-gray-300 px-4 py-3 pr-8 leading-tight focus:outline-0 focus:border-b-2 focus:border-blue-accent;
+  }
+  input {
+    @apply appearance-none bg-gray-50 w-full text-gray-700 mr-3 py-3 px-2 leading-tight focus:outline-0 border-spacing-x-px border-b-gray-300 focus:border-b-2 focus:border-blue-accent;
+  }
+}
+.articleHero {
+  @apply w-full min-h-fit;
+}
+.contentContainer {
+  margin: 0 auto;
+  @apply px-9;
+}
+.uiContainer {
+  margin: 0 auto;
+  @apply px-5 sm:px-9;
+}
+.logo {
+  @apply h-11 w-11 lg:w-80 pr-10 bg-left bg-contain bg-no-repeat bg-[url('/gfx/symbol.svg')] bg-[length:42px_42px] lg:bg-[url('/gfx/logo.svg')] lg:bg-[length:318px_42px] hover:bg-[url('/gfx/symbol_farge.svg')] lg:hover:bg-[url('/gfx/logo_farge.svg')] transition-all duration-1000;
+}
+
+@layer components {
+  .icon {
+    @apply text-xl pl-2 self-center;
+  }
+  .btn {
+    @apply max-w-xs hover:no-underline bg-blue-accent hover:bg-blue-accent-hover tracking-wider text-center text-nav font-bold cursor-pointer uppercase px-4 py-2 transition-colors block;
+  }
+  .btnDeepAccent {
+    @apply bg-deep-accent hover:bg-deep-accent-hover;
+  }
+  .btnBorderWhite {
+    @apply bg-transparent border-2 border-white hover:bg-deep-accent-hover;
+  }
+  .btnWhite {
+    @apply bg-white text-default-text;
+  }
+}
+.pageTitle {
+  font-size: 39px;
+  font-weight: 300;
+  color: #6387ff;
+}
