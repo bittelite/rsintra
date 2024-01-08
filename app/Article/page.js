@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import TicketCard from "../(components)/TicketCard";
 const Article = () => {
   return (
     <div className="grid mb-10">
