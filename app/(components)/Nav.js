@@ -46,7 +46,7 @@ const Nav = async () => {
                   />
                 </Link>
               </div>
-              <Link href="/TicketPage/new" className="hidden lg:flex">
+              <Link href="/" className="hidden lg:flex">
                 <span className="hidden">Skjema</span>
                 <FontAwesomeIcon
                   icon={faTicket}
@@ -54,7 +54,7 @@ const Nav = async () => {
                   title="Skjema"
                 />
               </Link>
-              <Link href="/Member/Dashboard" className="hidden lg:flex">
+              <Link href="/" className="hidden lg:flex">
                 <span className="hidden">Oppgaver</span>
                 <FontAwesomeIcon
                   icon={faTableColumns}
